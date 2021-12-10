@@ -9,23 +9,48 @@
   </head>
   <body> 
     <header> 
-      <div class="container">
-        <nav class="navbar"> 
-          <div class="logo">LOGO </div>
-          <div class="nav-links"> 
-            <input type="checkbox" id="menu_toggle">
-            <label class="hamburger" for="menu_toggle">&#9776</label>
-            <ul class="menu"> 
-              <li>ITEM </li>
-              <li>ITEM </li>
-              <li>ITEM </li>
-              <li>ITEM </li>
-              <li>ITEM </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+      <nav class="navbar"> 
+        <div class="logo">LOGO </div>
+        <div class="nav-links"> 
+          <input type="checkbox" id="menu_toggle">
+          <label class="hamburger" for="menu_toggle">&#9776</label>
+          <ul class="menu"> 
+            <li><a>ITEM </a></li>
+            <li>ITEM </li>
+            <li>ITEM </li>
+            <li>ITEM </li>
+            <li>ITEM </li>
+          </ul>
+        </div>
+      </nav>
     </header>
-    <script src="js/main.min.js"> </script>
+    <main>
+      <section> 
+        <div class="container">
+          <div class="promo">
+            <h1>Hello, I'm a frontend developer</h1><span>Welcome to my portfolio!</span><img src="img/avatar.jpg" alt="avatar">
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="info-wrapper"> 
+          <div class="container">
+            <article class="info"> 
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eum recusandae suscipit reprehenderit, vitae mollitia tempora necessitatibus quae cumque repellat laudantium placeat aperiam adipisci, dignissimos quibusdam assumenda obcaecati quasi ea.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section> 
+        <div class="container"> 
+          <div class="features">
+            <div class="card card_info"> <img src="#" alt="card img">
+              <h2>Developer </h2><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolor.</span><strong>Hard skills </strong><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolor.</span><strong>Soft skills</strong><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolor.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/main.min.js" type="module"> </script>
   </body>
 </html>

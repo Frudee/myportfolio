@@ -8,5 +8,27 @@ html(lang="en")
         title Document
     body 
         include templates/_header.pug
-        
-        script(src="js/main.min.js") 
+        main
+            section 
+                .container
+                    .promo
+                        h1 Hello, I'm a frontend developer
+                        span Welcome to my portfolio!
+                        img(src="img/avatar.jpg", alt="avatar")
+            section
+                .info-wrapper 
+                    .container
+                        article.info 
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eum recusandae suscipit reprehenderit, vitae mollitia tempora necessitatibus quae cumque repellat laudantium placeat aperiam adipisci, dignissimos quibusdam assumenda obcaecati quasi ea.
+            section 
+                .container 
+                    .features
+                        .card.card_info 
+                            img(src="#", alt="card img")
+                            h2 Developer 
+                            span Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolor.
+                            strong Hard skills 
+                            span Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolor.
+                            strong Soft skills
+                            span Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolor.
+        script(src="js/main.min.js" type="module") 
