@@ -1,11 +1,18 @@
+@import "helpers/vars";
 @import "components/menu";
 @import "components/card";
 @import "pages/index";
+@import url("https://fonts.googleapis.com/css2?family=Heebo&family=Lato:wght@400;900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
+}
+
+li {
+  list-style: none;
 }
 
 .container {
@@ -14,8 +21,64 @@
   width: 90%;
 }
 
+.flex-row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  // padding: 0.5rem;
+  .card {
+    // margin: 5px;
+  }
+  .col:first-child {
+    // width: 90%;
+  }
+  &_work {
+    padding: 2rem 0;
+  }
+}
+.check {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 50%;
+    width: 3px;
+    background-color: white;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+  }
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+  }
+}
+
+.btn {
+  margin: 1rem auto 0;
+  border-radius: 5px;
+  color: white;
+  padding: 2% 20%;
+  background-color: #113cfc;
+  display: inline-block;
+}
+
 @media (min-width: 768px) {
+  .flex-row {
+    flex-direction: row;
+  }
   .container {
-    width: 70%;
+    width: 80%;
   }
 }
