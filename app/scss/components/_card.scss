@@ -6,7 +6,7 @@
   flex-direction: column;
   padding: 2rem 2rem;
   &:not(:last-child) {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   &_info {
     align-items: center;
@@ -15,6 +15,7 @@
   }
   &_work {
     color: white;
+    padding: 2rem 0.5rem;
     // background: linear-gradient(
     //   0deg,
     //   rgba(40, 138, 255, 1) 0%,
@@ -35,8 +36,8 @@
     }
 
     img {
-      border: 0px solid #181818;
-      border-radius: 10px;
+      // border: 0px solid #181818;
+      // border-radius: 10px;
       display: block;
       width: 100%;
       height: auto;
@@ -52,6 +53,34 @@
     }
     align-items: flex-start;
     text-align: left;
+  }
+  &_project {
+    padding: 0;
+    border: 1px solid $border-color;
+    text-align: left;
+    // background: rgba($main-color, 0.35);
+    h3 {
+      // display: none;
+    }
+    img {
+      border: 1px solid $border-color;
+      border-radius: 10px;
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 1rem 0;
+      // object-fit: none;
+    }
+    li:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+    li {
+      font-size: 18px;
+    }
+    a:not(:last-child) {
+      display: block;
+      width: 100%;
+    }
   }
 }
 
