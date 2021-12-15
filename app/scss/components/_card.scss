@@ -21,8 +21,10 @@
     //   rgba(40, 138, 255, 1) 0%,
     //   rgba(30, 144, 255, 1) 100%
     // );
-    background: #568dc0;
-    border: 0px;
+    // background: #568dc0;
+    color: black;
+
+    border: 1px solid black;
     box-shadow: 9px 10px 13px -6px rgba(0, 0, 0, 0.35);
     li:not(:last-child) {
       margin-bottom: 1rem;
