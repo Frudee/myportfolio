@@ -5,30 +5,55 @@
   height: calc(100vh - 87px);
   padding: 5% 0;
   text-align: center;
-
+  z-index: -100;
   h1 {
     text-align: center;
     // max-width: 50%;
     margin-bottom: 2rem;
     font-size: 44px;
+    opacity: 0;
+
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    animation: fadeIn 3s;
+    animation-fill-mode: forwards;
   }
+
   span {
     margin-bottom: 4rem;
     font-size: 26px;
+    opacity: 0;
+
+    -webkit-animation: fadeIn 3s linear 1.5s;
+    -moz-animation: fadeIn 3s linear 1.5s;
+    -ms-animation: fadeIn 3s linear 1.5s;
+    -o-animation: fadeIn 3s linear 1.5s;
+    animation: fadeIn 3s linear 1.5s;
+    animation-fill-mode: forwards;
   }
   img {
     max-width: 30%;
+    opacity: 0;
+
+    -webkit-animation: fadeIn 3s linear 1.5s;
+    -moz-animation: fadeIn 3s linear 1.5s;
+    -ms-animation: fadeIn 3s linear 1.5s;
+    -o-animation: fadeIn 3s linear 1.5s;
+    animation: fadeIn 3s linear 1.5s;
+    animation-fill-mode: forwards;
   }
 }
 
-@media (min-width: 768px) {
-  .promo {
-    img {
-      // max-width: 20%;
-    }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
-
 .info {
   text-align: center;
   line-height: 24px;
@@ -42,9 +67,18 @@
   align-items: center;
   h2 {
     margin-bottom: 3rem;
+    line-height: 36px;
   }
   p {
-    max-width: 60%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .info {
+    p {
+      max-width: 60%;
+    }
   }
 }
 
@@ -96,6 +130,10 @@
   }
   .social {
     margin-bottom: 2rem;
+    svg:hover {
+      transition: 0.3s;
+      transform: translateY(-10px);
+    }
   }
   span {
     color: white;
