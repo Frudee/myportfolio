@@ -80,6 +80,11 @@
       max-width: 60%;
     }
   }
+  .contact-me {
+    p {
+      max-width: 60%;
+    }
+  }
 }
 
 .wrapper {
@@ -107,6 +112,14 @@
   padding: 2rem 0;
   text-align: center;
   background: $main-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  strong {
+    display: block;
+    padding: 1rem;
+    font-size: 18px;
+  }
 }
 
 .footer {
@@ -130,6 +143,9 @@
   }
   .social {
     margin-bottom: 2rem;
+    svg {
+      transition: 0.3s;
+    }
     svg:hover {
       transition: 0.3s;
       transform: translateY(-10px);

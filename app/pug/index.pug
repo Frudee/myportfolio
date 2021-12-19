@@ -24,7 +24,7 @@ html(lang="en")
                             p I started my path of web development a few years ago, I have made websites as a freelancer, refactured legacy codes, created UX and UI for businesses and private customers. I have a sense of perfectionism, always pursue my goals and do my best to deliver outstanding experience to my clients.
             section 
                 .container 
-                    .features
+                    .features(id="about")
                         .card.card_info 
                             img(src="../img/web.svg" alt="card img")
                             h2 Frontend Developer 
@@ -42,7 +42,7 @@ html(lang="en")
                                 li Lighthouse 
             section 
                 .container 
-                    .works 
+                    .works(id="work") 
                         h2 My work
                         span Here you can find some of my recent works. If you want to see more - please check my <a href="#">GitHub profile</a>.
                         .flex-row_work.flex-row
@@ -79,15 +79,16 @@ html(lang="en")
                                             li <span class="check"></span>
                                 a(href="#" class="btn") VISIT                                                     
                             .card.card_work
-                                h3 Todo App
-                                a(href="https://frudee-todoapp.netlify.app/")
-                                    img(src="img/Note2.jpg", alt="work example")
+                                h3 Pig Game
+                                .img
+                                    a(href="https://frudee-todoapp.netlify.app/")
+                                        img(src="img/piggame.jpg", alt="work example")
                                 .flex-row 
                                     .col    
                                         ul 
-                                            li ES6  
-                                            li Prototypal inheritance  
-                                            li Local storage 
+                                            li Turn-based game  
+                                            li Native JavaScript  
+                                            li 2 players 
                                     .col
                                         ul 
                                             li <span class="check"></span>
@@ -113,7 +114,7 @@ html(lang="en")
             section 
                 .wrapper
                     .container 
-                        .contact-me 
+                        .contact-me(id="cv") 
                             p I'm always open for new connections and opportunities. Feel free to send me a message via <a href="https://t.me/frudee"><strong>telegram</strong></a> or send me an email: <strong>dsukhorukov16@gmail.com</strong>. You can download my CV by clicking the button down below.
                             a(href="CV.docx" download class="btn") Download CV
             include templates/_footer.pug
